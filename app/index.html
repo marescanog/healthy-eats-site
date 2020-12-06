@@ -21,45 +21,57 @@
   </header>
 
   <div class="large-hero">
-    <img src="assets/images/hero--large.jpg">
+    <picture>
+      <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+      <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+      <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+      <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Healthy food arranged on table" class="large-hero__image">
+    </picture>
     <div class = "large-hero__text-content">
-      <h1 class="large-hero__title">Your healthy meals.</h1>
-      <h2 class="large-hero__subtitle">One delivery away.</h2>
-      <p class="large-hero__description">We create nutritious and flavorful meals that bring out the best in you.</p>
-      <p><a href="#" class="btn btn--orange btn--large">Get Started Today</a></p>
+      <div class = "wrapper">
+        <h1 class="large-hero__title">Your healthy meals.</h1>
+        <h2 class="large-hero__subtitle">One delivery away.</h2>
+        <p class="large-hero__description">We create nutritious and flavorful meals that bring out the best in you.</p>
+        <p><a href="#" class="btn btn--orange btn--large">Get Started Today</a></p>
+      </div>
     </div>
   </div>
 
-  <div id="our-beginning">
-    <h2>The first meal was made with love and health first in mind.</h2>
-    <h3>Ever since, we&rsquo;ve been working to make better meals for everyone.</h3>
-    <img src="assets/images/first-trip.jpg" alt="Couple walking down a street.">
-    <img src="assets/images/our-start.jpg" alt="Our founder, Jane Doe">
-    <h2>Here&rsquo;s how we got started&hellip;</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+  <div id="our-beginning" class="page-section">
+    <div class="wrapper">
+      <h2 class="headline headline--centered">The first meal was made with love and health in mind.</h2>
+      <h3 class="headline headline--centered">Ever since, we&rsquo;ve been working to make better meals for everyone.</h3>
+      <img src="assets/images/first-trip.jpg" alt="Couple walking down a street.">
+      <img src="assets/images/our-start.jpg" alt="Our founder, Jane Doe">
+      <h2 class="headline">Here&rsquo;s how we got started&hellip;</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>  
+    </div>
   </div>
 
-  <div id="features">
-    <img src="assets/images/icons/star.svg">
-    <h2>Our Features</h2>
+  <div id="features" class="page-section--orange">
+    <div class="wrapper">
+      <img src="assets/images/icons/star.svg" fill:$mainBlue>
+      <h2>Our Features</h2>
+    
+      <img src="assets/images/icons/rain.svg" fill:$mainBlue>
+      <h3>We&rsquo;ll Watch the Calories</h3>
+      <p>Join our newsletter and we&rsquo;ll send you dietary facts from our in house nutritionist. A good diet can be refreshing, but sometimes you just want to learn more ways to keep yourself healthy.</p>
   
-    <img src="assets/images/icons/rain.svg">
-    <h3>We&rsquo;ll Watch the Calories</h3>
-    <p>Join our newsletter and we&rsquo;ll send you dietary facts from our in house nutritionist. A good diet can be refreshing, but sometimes you just want to learn more ways to keep yourself healthy.</p>
-
-    <img src="assets/images/icons/globe.svg">
-    <h3>New menu each week</h3>
-    <p>We&rsquo;ve scoured the entire planet for the best recipes and healthiest meals. If there&rsquo;s a specific diet restriction you want addressed, we'll be sure to put your needs first.</p>
-
-    <img src="assets/images/icons/wifi.svg">
-    <h3>Keto and Hi-Protien options available</h3>
-    <p>We send you the perfect meal that matches your target diet that you can personally vouch for as being amazing. Which means we&rsquo;ve planned out the best ingredients to use and integrated them into out recipe&rsquo;s.</p>
-
-    <img src="assets/images/icons/fire.svg">
-    <h3>Coffee and Juice</h3>
-    <p>Everytime you book a weekly meal plan with us we send you a coffee and juice kit with the finest vitamins and minerals. The kit will allow you to enjoy your beverages guilt-free.</p>
+      <img src="assets/images/icons/globe.svg" fill:$mainBlue>
+      <h3>New menu each week</h3>
+      <p>We&rsquo;ve scoured the entire planet for the best recipes and healthiest meals. If there&rsquo;s a specific diet restriction you want addressed, we'll be sure to put your needs first.</p>
+  
+      <img src="assets/images/icons/wifi.svg" fill:$mainBlue>
+      <h3>Keto and Hi-Protien options available</h3>
+      <p>We send you the perfect meal that matches your target diet that you can personally vouch for as being amazing. Which means we&rsquo;ve planned out the best ingredients to use and integrated them into out recipe&rsquo;s.</p>
+  
+      <img src="assets/images/icons/fire.svg" fill:$mainBlue>
+      <h3>Coffee and Juice</h3>
+      <p>Everytime you book a weekly meal plan with us we send you a coffee and juice kit with the finest vitamins and minerals. The kit will allow you to enjoy your beverages guilt-free.</p>
+   
+    </div>
   </div>
 
   <div id="testimonials">

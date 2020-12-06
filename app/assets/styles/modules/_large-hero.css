@@ -1,6 +1,11 @@
 
 .large-hero{
     position: relative;
+    border-bottom: 0.7rem solid $mainOrange;
+    &__image {
+        display: block;
+    }
+
 
     &__text-content {
         color:#f3f1ed;
@@ -14,36 +19,45 @@
 
     &__title {
         letter-spacing: 0.2rem;
-        text-shadow: 0.3rem 0.3rem #1f0c019f;
+        text-shadow: 0.25rem 0.2rem #0000009f;
         font-family: 'Ubuntu', sans-serif;
-        color:#f1eee7;
-        font-size: 1.1rem;
-
+        color:#ffffff;
+        font-size: 2rem;
         margin: 1rem;
 
         @mixin atSmall {
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
 
         @mixin atMedium {
-            font-size: 3.2rem;
+            font-size: 3.8rem;
         }
 
         @mixin atLarge {
             font-size: 4.3rem;
+            text-shadow: 0.3rem 0.3rem #1f0c019f;
         }
     }
     
     &__subtitle{
         letter-spacing: 0.2rem;
-        text-shadow: 0.35rem 0.35rem #1f0c019f;
+        text-shadow: 0.2rem 0.14rem #0000009f, 0 0 0.5rem #0000009f;
         font-family: 'Ubuntu', sans-serif;
-        color:#f1eee7;
-        font-size: 1.1rem;
+        color:#ffffff;
+        font-size: 1.3rem;
         margin: 0;
 
         @mixin atSmall {
+            font-size: 1.7rem;
+        }
+
+        @mixin atMedium {
+            font-size: 2.3rem;
+        }
+
+        @mixin atLarge {
             font-size: 2.9rem;
+            text-shadow: 0.35rem 0.35rem #1f0c019f;
         }
     }
 
@@ -52,7 +66,15 @@
         color:#ffffff;
         font-family: 'Saira Condensed', sans-serif;
         text-shadow: 0.1rem 0.1rem 0.2rem #0000009f, 0 0 1em #0000009f, 0 0 1em #0000009f, 0 0 0.2em #0000009f, 0 0 0.2em #0000009f;
-        font-size: 1.5rem;
+        font-size: .9rem;
+
+        @mixin atMedium {
+            font-size: 1.3rem;
+        }
+
+        @mixin atLarge {
+            font-size: 1.5rem;
+        }
     }
 }
 
