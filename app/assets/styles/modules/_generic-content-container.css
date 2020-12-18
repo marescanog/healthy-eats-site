@@ -11,7 +11,8 @@
     }
 
     p a {
-        font-weight: 700;
+        color: $mainOrange;
+        text-shadow: none;
     }
 
 }
