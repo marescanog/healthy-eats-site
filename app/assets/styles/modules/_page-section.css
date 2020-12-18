@@ -6,13 +6,47 @@
         padding: 4.5rem 0;
     }
 
+    &--no-b-padding-until-medium{
+        padding-bottom: 0;
+
+        @mixin atMedium {
+            padding: 4.5rem 0;
+        }
+    }
+    
+    &--no-b-padding-until-large{
+        padding-bottom: 0;
+
+        @mixin atMedium {
+            padding: 2.5rem 0;
+        }
+
+        @mixin atLarge {
+            padding: 4.5rem 0;
+        }
+    }
+
     &--orange{
         background-color: $mainOrange;
         color:#FFF;
 
-        @mixin atMedium {
+        @mixin atLarge {
             padding-top: 5rem;
             padding-bottom: 5rem;
+        }
+    }
+
+    &--testimonials{
+        background-color: #fff6e4;
+
+        @mixin atMedium {
+            background: url('assets/images/testimonials-bg-medium2.jpg') top center no-repeat;
+            background-size: cover;
+        }
+
+        @mixin atLarge {
+            background: url('assets/images/testimonials-bg.jpg') top center no-repeat;
+            background-size: cover;
         }
     }
 }

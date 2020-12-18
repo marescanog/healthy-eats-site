@@ -10,6 +10,13 @@
         font-weight: 500;
     }
 
+    &__orange {
+        color: $mainOrange;
+        @mixin atMedium {
+            text-shadow: -1px 0 #4b2510, 0 1px #4b2510, 1px 0 #4b2510, 0 -1px #4b2510;
+        }
+    }
+
     &__icon {
         display: block;
         margin-left: auto;
@@ -17,6 +24,7 @@
         margin-bottom: .6rem;
 
         @mixin atSmall {
+            position: relative;
             margin-right: .5rem;
             margin-left: 0;
             margin-bottom: 0rem;
