@@ -9,5 +9,7 @@
 @import "modules/_headline";
 @import "modules/_row";
 @import "modules/_generic-content-container";
+@import "modules/_section-title";
+@import "modules/_feature-item";
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed&family=Ubuntu:wght@700&display=swap');

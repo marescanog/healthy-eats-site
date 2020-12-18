@@ -8,6 +8,11 @@
 
     &--orange{
         background-color: $mainOrange;
-        color:#FFF
+        color:#FFF;
+
+        @mixin atMedium {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
     }
 }
