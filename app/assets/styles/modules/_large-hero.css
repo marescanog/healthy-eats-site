@@ -2,6 +2,8 @@
 .large-hero{
     position: relative;
     border-bottom: 0.7rem solid $mainOrange;
+
+    
     &__image {
         display: block;
     }

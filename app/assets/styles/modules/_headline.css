@@ -1,7 +1,11 @@
 .headline {
+    font-size: 1.9rem;
     font-weight: 300;
-    font-size: 2.7rem;
     color: $mainBlue;
+
+    @mixin atSmall {
+        font-size: 2.7rem;
+    }
 
     &--centered {
         text-align: center;
@@ -12,7 +16,10 @@
     }
 
     &--small {
-        font-size: 1.875rem;
+        font-size: 1.2rem;
+        @mixin atSmall {
+            font-size: 1.875rem;
+        }
     }
 
     &--narrow {
@@ -23,5 +30,17 @@
 
     &--light {
         font-weight: 250;
+    }
+
+    &--b-margin-small {
+        margin-bottom: 0.5em;
+    }
+
+    &--b-margin-large {
+        margin-bottom: 1.6em;
+    }
+
+    &--no-t-margin {
+        margin-top: 0;
     }
 }
