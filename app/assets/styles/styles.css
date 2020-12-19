@@ -15,5 +15,6 @@
 @import "modules/_site-footer";
 @import "modules/_site-header";
 @import "modules/_primary-nav";
+@import "modules/_reveal-item";
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed&family=Ubuntu:wght@700&display=swap');
