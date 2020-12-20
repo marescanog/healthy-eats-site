@@ -18,6 +18,11 @@
         left: 0;
         width: 100%;
         text-align: center;
+
+        &__other-page {
+            transform: translateY(-90%);
+            padding-top: 0px;
+        }
     }
 
     &__title {
@@ -39,6 +44,11 @@
         @mixin atLarge {
             font-size: 4.3rem;
             text-shadow: 0.3rem 0.3rem #1f0c019f;
+        }
+
+        &__other-page {
+            position: relative;
+            top:0;
         }
     }
     
