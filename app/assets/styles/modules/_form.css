@@ -94,3 +94,10 @@
         }
     }
 }
+
+.form form button:hover, .form form button:focus{
+    background-color: #f5d388;
+    border: 2px solid #f5d388;
+    color: $logoOrangelight;
+    outline: none;
+}
