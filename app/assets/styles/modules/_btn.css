@@ -54,6 +54,14 @@
 
     &--submit-form-contact {
         background-color:$mainOrange;
+        border: 2px solid $mainOrange;
+        color: white;
+        border-radius: 26.5px;
+        padding: 16px 24px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1;
+
     }
 
 }
