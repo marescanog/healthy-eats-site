@@ -48,4 +48,13 @@
         }
 
     }
+
+    &--high-z {
+        z-index: 20;
+        position: relative;
+    }
+
+    &--overflow-visible {
+        overflow: visible;
+    }
 }

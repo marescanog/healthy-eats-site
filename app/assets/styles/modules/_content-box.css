@@ -1,0 +1,12 @@
+.content-box {
+    width: 100%;
+    min-height: 600px;
+    background-color: #fff;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: 0 3px 45px 0 rgba(63,92,117,0.1);
+    padding-top: 10px;
+    max-width: 1300px;
+    position: relative;
+    top: -230px;
+}
