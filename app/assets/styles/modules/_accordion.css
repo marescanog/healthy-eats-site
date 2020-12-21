@@ -1,0 +1,43 @@
+.accordion{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+
+    &--card {
+        border: 0px;
+        margin-bottom: 20px;
+        box-shadow: 0 3px 45px 0 rgba(63,92,117,0.15);
+
+        &--header {
+            background: none;
+            padding: 30px;
+            border: 0;
+        }
+    }
+
+    &--btn-trigger {
+        border: 0;
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        background: none;
+        align-items: center;
+        justify-content: space-between;
+        outline: none;
+
+        h6{
+            font-size: 0.9rem;
+            font-weight: 400;
+            border: 0;
+            margin: 0;
+
+            @mixin atSmallSlightlyLarger {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

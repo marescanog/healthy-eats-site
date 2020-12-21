@@ -10,6 +10,11 @@
     position: relative;
     top: -230px;
 
+    &--bg-lightgray {
+        background-color: rgb(250, 250, 250);
+        box-shadow: 0 3px 45px 0 rgba(63,92,117,0.2);
+    }
+
     &--form {
 
         padding-right: 25px;
@@ -22,7 +27,6 @@
         @mixin atMedium{
             padding-right: 0px;
             padding-left: 60px;
-            background-color: white;
         }
 
         @mixin atMediumL{
