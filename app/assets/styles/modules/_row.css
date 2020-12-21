@@ -13,6 +13,10 @@
         margin-right: -100px;
     }
 
+    &--gutters-larger {
+        margin-right: -250px;
+    }
+
     &--gutters-small {
         margin-right: -45px;
     }
@@ -25,6 +29,10 @@
         padding-right: 100px;
     }
 
+    &--gutters-larger> div{
+        padding-right: 250px;
+    }
+
     &--gutters-small > div{
         padding-right: 45px;
     }
@@ -32,6 +40,15 @@
     &__b-margin-until-medium {
         margin-bottom: 1rem;
     }
+
+
+    @mixin atMediumL {
+        &__contact {
+            float: left;
+            width: 66.66%;
+        }
+    }
+
 
     @mixin atMedium {
 

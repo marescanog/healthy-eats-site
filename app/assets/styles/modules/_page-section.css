@@ -6,6 +6,15 @@
         padding: 4.5rem 0;
     }
 
+    &--button-submit-contact-form {
+        padding-top: 0;
+        padding-bottom: 1rem;
+        @mixin atMedium {
+            padding-top: 1rem;
+            padding-bottom: 3rem;
+        }
+    }
+
     &--no-b-padding-until-medium{
         padding-bottom: 0;
 

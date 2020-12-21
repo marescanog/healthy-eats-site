@@ -9,4 +9,25 @@
     max-width: 1300px;
     position: relative;
     top: -230px;
+
+    &--form {
+
+        padding-right: 25px;
+        padding-left: 50px;
+        @mixin atSmall{
+            padding-right: 25px;
+            padding-left: 60px;
+        }
+
+        @mixin atMedium{
+            padding-right: 0px;
+            padding-left: 60px;
+            background-color: white;
+        }
+
+        @mixin atMediumL{
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
 }

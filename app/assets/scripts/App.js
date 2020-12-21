@@ -9,6 +9,7 @@ if ( window.location.href.indexOf(homeUrl) > 0 ){
     new RevealOnScroll(document.querySelectorAll(".testimonial"), 70);
 }
 
+
 let stickyHeader = new StickyHeader();
 let mobileMenu = new MobileMenu();
 

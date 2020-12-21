@@ -1,0 +1,96 @@
+.form {
+
+    &--image {
+        position: relative;
+        transform: translateX(20px);
+        background-color: white;
+
+        @mixin atSmall {
+            transform: translateX(45px);
+        }
+
+        @mixin atSmallSlightlyLarger {
+            transform: translateX(75px);
+        }
+
+        @mixin atSmallL {
+            transform: translateX(140px);
+        }
+        
+        @mixin atMedium {
+            transform: translateX(-8px);
+        }
+
+        @mixin atMediumSlightlyLarger {
+            transform: translateX(10px);
+        }
+        
+        @mixin atLarge {
+            transform: translateX(50px);
+        }
+
+        @mixin atLarger {
+            transform: translateX(60px);
+        }
+
+    }
+
+
+    &--control-wrap{
+        position: relative;
+    }
+
+
+    &--group{
+            border: 0;
+            height: auto;
+            padding: 13px 15px;
+            border-radius: 4px;
+            background-color: #F6F7FA;
+            color: #20202C;
+            width: 55%;
+
+            @mixin atSmall {
+                width: 60%;
+            }
+
+            @mixin atSmallL {
+                width: 65%;
+            }
+
+            @mixin atMedium {
+                width: 55%;
+            }
+
+            @mixin atMediumL {
+            width: 100%;
+            }
+
+    }
+
+    /*FORM STYLES*/
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    p{
+        font-weight: 300;
+        line-height: 1.65;
+        margin: 0 0 0 0;
+
+        @mixin atSmall {
+            font-size: 1.05rem;
+        }
+    }
+
+    &--input{
+        margin-bottom: 10px;
+        margin-left: 5px;
+
+        input[type=text]:focus {
+            outline: rgba(56,179,186,0.3) solid 3px;
+
+        }
+    }
+}

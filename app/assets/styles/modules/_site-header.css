@@ -107,7 +107,7 @@
         position: absolute;
         top: 0px;
         left: 50%;
-        transition: transform .3s ease-out, top .3s ease-out, border-radius .3s ease-out,;
+        transition: transform .3s ease-out, top .3s ease-out;
         transform: translateX(-50%);
         background-color: $mainOrange;
         padding-left: 10px;
