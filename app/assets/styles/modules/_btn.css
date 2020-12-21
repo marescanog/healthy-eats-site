@@ -53,7 +53,7 @@
     }
 
     &--submit-form-contact {
-        
+        background-color:$mainOrange;
     }
 
 }
