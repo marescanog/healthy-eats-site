@@ -105,7 +105,11 @@
             border-radius: 4px;
             background-color: #F6F7FA;
             color: #20202C;
-            width: 100%;
+            width: 78%;
+
+            @mixin atPhoneSize {
+                width: 100%;
+            }
         }
 
         input[type=text]:focus, input[type=number]:focus, input[type=date]:focus,input[type=email]:focus, select:focus {
@@ -200,7 +204,11 @@
 }
 
 .paper-plane{
-    transform: translateX(50px);
+    transform: translateX(-5px);
+
+    @mixin atPhoneSize {
+        transform: translateX(50px);
+    }
 
     @mixin atSmallSlightlyLarger {
         transform: translateX(80px);

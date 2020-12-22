@@ -1,21 +1,24 @@
+.lottie-player {
+    width: 180px; 
+    height: 180px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+
+    @mixin atPhoneSize {
+        width: 300px; 
+        height: 300px;
+    }
+}
+
 .form {
 
     &--image {
         position: relative;
-        transform: translateX(20px);
+        transform: translateX(0px);
         background-color: white;
 
-        @mixin atSmall {
-            transform: translateX(45px);
-        }
 
-        @mixin atSmallSlightlyLarger {
-            transform: translateX(75px);
-        }
-
-        @mixin atSmallL {
-            transform: translateX(140px);
-        }
         
         @mixin atMedium {
             transform: translateX(-8px);
@@ -46,7 +49,7 @@
             height: auto;
             padding: 13px 15px;
             border-radius: 4px;
-            background-color: #F6F7FA;
+            background-color: #faf6f6;
             color: #20202C;
             width: 55%;
 

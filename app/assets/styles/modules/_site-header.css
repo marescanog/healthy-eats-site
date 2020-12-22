@@ -24,13 +24,18 @@
         z-index: 1;
         transition: background-color .2s ease-out, height .3s ease-out;
 
+
         @mixin atMedium {
             display: none;
         }
 
         &--is-expanded {
             background-color: rgba(153, 86, 32, 0.85);
-            height: 205px;
+            height: 300px;
+
+            @mixin atPhoneSize {
+                height: 205px;
+            }
         }
     }
 
@@ -110,12 +115,21 @@
         transition: transform .3s ease-out, top .3s ease-out;
         transform: translateX(-50%);
         background-color: $mainOrange;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
         border-radius: 0 0 20px 20px;
         z-index: 3;
+        width: 110px;
+
+        @mixin atPhoneSize {
+            width: 160px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
 
         @mixin atMedium {
             left: auto;

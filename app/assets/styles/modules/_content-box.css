@@ -8,7 +8,11 @@
     padding-top: 10px;
     max-width: 1300px;
     position: relative;
-    top: -230px;
+    top: -130px;
+
+    @mixin atPhoneSize {
+        top: -230px;
+    }
 
     &--bg-lightgray {
         background-color: rgb(255, 255, 255);
@@ -17,8 +21,14 @@
 
     &--form {
 
-        padding-right: 25px;
-        padding-left: 50px;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        @mixin atPhoneSize {
+            padding-right: 25px;
+            padding-left: 50px;
+        }
+
         @mixin atSmall{
             padding-right: 25px;
             padding-left: 60px;

@@ -20,8 +20,12 @@
         text-align: center;
 
         &__other-page {
-            transform: translateY(-100%);
+            transform: translateY(-75%);
             padding-top: 0px;
+
+            @mixin atPhoneSize {
+                transform: translateY(-100%);
+            }
 
              @mixin atMedium {
                 transform: translateY(-70%);
@@ -53,6 +57,13 @@
         &__other-page {
             position: relative;
             top:0;
+
+            &__faqs{
+                font-size: 1.2rem;
+                @mixin atPhoneSize {
+                    font-size: 2rem;
+                }
+            }
         }
     }
     

@@ -24,7 +24,12 @@
 
     &--larger {
         border-radius: 30px;
-        padding: 1.1rem 2.5rem;
+        padding: 1rem 1.5rem;
+
+        @mixin atPhoneSize {
+            padding: 1.1rem 2.5rem;
+        }
+
         @mixin atSmall {
             font-size: 1.25rem;
             padding: 1rem 1.rem;
@@ -33,7 +38,11 @@
 
     &--footer {
         position: relative;
-        transform: translateY(-140px);
+        transform: translateY(-80px);
+
+        @mixin atPhoneSize {
+            transform: translateY(-140px);
+        }
 
         @mixin atSmall {
             transform: translateY(-120px);

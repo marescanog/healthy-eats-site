@@ -110,4 +110,13 @@
         }
     }
 
+    &--overflow-visible--phone-size {
+        overflow: visible;
+
+        @mixin atPhoneSize {
+            overflow: hidden;
+        }
+    }
+
+
 }
