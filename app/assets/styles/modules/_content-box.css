@@ -11,7 +11,7 @@
     top: -230px;
 
     &--bg-lightgray {
-        background-color: rgb(250, 250, 250);
+        background-color: rgb(255, 255, 255);
         box-shadow: 0 3px 45px 0 rgba(63,92,117,0.2);
     }
 

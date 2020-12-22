@@ -9,6 +9,7 @@
 
     &--card {
         max-width: 350px;
+        background-color: white;
 
         @mixin atSmall {
             max-width: 400px;

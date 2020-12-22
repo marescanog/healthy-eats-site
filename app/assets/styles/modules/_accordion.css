@@ -8,13 +8,14 @@
     border-radius: .25rem;
 
     &--card {
+        background-color: #fff;
         border: 0px;
         margin-bottom: 20px;
         box-shadow: 0 3px 45px 0 rgba(63,92,117,0.15);
 
         &--header {
             background: none;
-            padding: 30px;
+            padding: 10px;
             border: 0;
         }
     }
@@ -22,7 +23,7 @@
     &--btn-trigger {
         border: 0;
         width: 100%;
-        padding: 0px;
+        padding: 15px;
         display: flex;
         background: none;
         align-items: center;
@@ -40,4 +41,67 @@
             }
         }
     }
+
+    &--btn-trigger-expanded {
+        border: 0;
+    }
+
+    &--icon-up {
+        transform: rotate(0deg);
+        transition: transform .3s ease-out;        
+    }
+
+    &--icon-down {
+        transform: rotate(-180deg) translateY(3px);
+    }
+
+    &--hr{
+        position: relative;
+        transform: translateY(13px);
+        transform: translatex(-3px);
+        width: 100%;
+        max-height: 1px;
+        background-color: rgb(236, 230, 230);
+        padding: 0.05rem 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        @mixin atSmall {
+            max-width: 600px;
+            padding: 0.05rem 0rem;
+        }
+
+        @mixin atMedium {
+            max-width: 600px;
+            padding: 0.05rem 15rem;
+        }
+
+        @mixin atMediumSlightlyLarger {
+            padding: 0.05rem 22rem;
+        }
+
+        @mixin atLarge{
+            padding: 0.05rem 25rem;
+        }
+    }
+
+    &--p-style{
+        margin-left: 40px;
+        margin-right: 50px;
+        font-weight: 300;
+        line-height: 1.65;
+        text-align: justify;
+        @mixin atSmall {
+            font-size: 1.05rem;
+        }
+    }
+
+    &__panel{
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
 }
