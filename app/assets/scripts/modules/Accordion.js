@@ -1,26 +1,23 @@
 class Accordion {
     constructor() {
-        this.icon1 = document.querySelector(".accordion--icon-up")
-        this.accordion1 = document.querySelector(".accordion--btn-trigger")
-        var acc = document.getElementsByClassName(".accordion--btn-trigger");
-
-        this.events()
+        var icon = document.querySelectorAll(".accordion--icon-up");
+        var acc = document.querySelectorAll(".accordion--btn-trigger");
+        this.events(acc, icon)
     }
 
-    events() {
-        this.accordion1.addEventListener("click", () => this.accordion1Toggle1());
+    events(acc, icon) {
+        acc[0].addEventListener("click", () => this.toggleAccordion(acc[0], icon[0]));
+        acc[1].addEventListener("click", () => this.toggleAccordion(acc[1], icon[1]));
+        acc[2].addEventListener("click", () => this.toggleAccordion(acc[2], icon[2]));
+        acc[3].addEventListener("click", () => this.toggleAccordion(acc[3], icon[3]));
+        acc[4].addEventListener("click", () => this.toggleAccordion(acc[4], icon[4]));
+
     }
 
-    accordion1Toggle1() {
-        this.icon1.classList.toggle("accordion--icon-down")
-        console.log(this.accordion1.nextElementSibling)
-        var panel = this.accordion1.nextElementSibling;
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-          }
+    toggleAccordion(item, arrow) {
+        var panel = item.nextElementSibling;
+        arrow.classList.toggle("accordion--icon-down")
+        panel.classList.toggle("accordion__panel__expanded")
     }
-
 }
 export default Accordion

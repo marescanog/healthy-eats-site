@@ -46,9 +46,9 @@
         border: 0;
     }
 
-    &--icon-up {
+    &--icon-up {      
         transform: rotate(0deg);
-        transition: transform .3s ease-out;        
+        transition: transform .3s ease-out;   
     }
 
     &--icon-down {
@@ -86,13 +86,26 @@
     }
 
     &--p-style{
-        margin-left: 40px;
-        margin-right: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
         font-weight: 300;
         line-height: 1.65;
         text-align: justify;
-        @mixin atSmall {
+
+        @mixin atSmallSlightlyLarger {
             font-size: 1.05rem;
+            margin-left: 5px;
+            margin-right: 10px;
+        }
+
+        @mixin atMedium {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        @mixin atLarge{
+            margin-left: 40px;
+            margin-right: 50px;
         }
     }
 
@@ -100,6 +113,14 @@
         padding: 0 18px;
         background-color: white;
         max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    &__panel__expanded{
+        padding: 0 18px;
+        background-color: white;
+        max-height: 600px;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
     }
