@@ -33,8 +33,15 @@
         h6{
             font-size: 0.9rem;
             font-weight: 400;
+            font-size: 0.9rem;
             border: 0;
             margin: 0;
+            text-align: justify;
+
+            @mixin atPhoneSize {
+                font-size: 1rem;
+                text-align: left;
+            }
 
             @mixin atSmallSlightlyLarger {
                 font-size: 1.1rem;
@@ -49,6 +56,15 @@
     &--icon-up {      
         transform: rotate(0deg);
         transition: transform .3s ease-out;   
+        min-width: 20px;
+        min-height: 20px;
+        min-height: 24px;
+        margin-left: 10px;
+        @mixin atPhoneSize {
+            min-width: 24px;
+            min-height: 24px;
+            margin-left: 0;
+        }
     }
 
     &--icon-down {
@@ -91,11 +107,17 @@
         font-weight: 300;
         line-height: 1.65;
         text-align: justify;
+        font-size: 0.9rem;
+
+        @mixin atPhoneSize {
+            font-size: 1.05rem;
+            line-height: 1.65;
+        }
 
         @mixin atSmallSlightlyLarger {
-            font-size: 1.05rem;
             margin-left: 5px;
             margin-right: 10px;
+            font-size: 1.1rem;
         }
 
         @mixin atMedium {

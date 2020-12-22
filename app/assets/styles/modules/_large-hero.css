@@ -63,6 +63,19 @@
                 @mixin atPhoneSize {
                     font-size: 2rem;
                 }
+
+                @mixin atSmall {
+                    font-size: 2.5rem;
+                }
+        
+                @mixin atMedium {
+                    font-size: 3.8rem;
+                }
+        
+                @mixin atLarge {
+                    font-size: 4.3rem;
+                    text-shadow: 0.3rem 0.3rem #1f0c019f;
+                }
             }
         }
     }
