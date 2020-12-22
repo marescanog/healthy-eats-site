@@ -132,6 +132,7 @@
         }
 
         @mixin atMedium {
+            width: 200px;
             left: auto;
             transform: translateX(0);
             padding-left: 20px;
