@@ -49,6 +49,9 @@
         margin-bottom: 1rem;
     }
 
+    &__b-margin-regardless {
+        margin-bottom: 2rem;
+    }
 
     @mixin atMediumL {
         &__contact {

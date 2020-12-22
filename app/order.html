@@ -95,7 +95,7 @@
                             </div>
                             <div class="order-form--label-group-right">
                               <label>Calories</label>
-                              <input id="Calories" type="text"  disabled>
+                              <input id="Calories" type="text" name="Calories" disabled>
                             </div>
                             <div class="order-form--label-group">
                               <label>Start Date</label>
@@ -127,7 +127,7 @@
                             <div class="order-form--label-group-right">
                               <label>Email Address</label>
                               <span style="color: #f00;">*</span>
-                              <input id="email-address" type="text">
+                              <input id="email-address" type="email">
                             </div>
                             <div class="order-form--label-group">
                               <label>Contact number</label>
@@ -145,7 +145,6 @@
                             <div class="order-form--hr"></div>
                           </div>
                           <div class="order-form--contents">
-
                             <div class="order-form--label-group-right">
                               <label>Address</label>
                               <span style="color: #f00;">*</span>
@@ -159,14 +158,70 @@
                   </div>
 
                   <!--Right Side of Order Form-->
-                  <div class="row__medium-4 row__medium-4--larger2 row__b-margin-until-medium">
+                  <div class="row__medium-4 row__medium-4--larger2 row__b-margin-regardless">
                     <div class="order-form--right-side">
                       <h5 class="order-form--selection-title">Total Cost</h5>
                       <div class="order-form--hr"></div>
                       <div class="order-form--contents">
-                        <div class="order-form--total-cost-box">.</div>
+                        <div class="order-form--total-cost-box">
+                          <div class="price-text">
+                            <p>
+                              2,300
+                            </p>
+                          </div>
+                          <div class="small">
+                            <span>
+                              Calorie Light
+                            </span>
+                            <br>
+                            <span>
+                              1 week
+                            </span>
+                          </div>
+                          <div class="price-text d-flex">
+                            <div class="price-text price-text--left-aligned">
+                              <p>
+                                +
+                              </p>
+                            </div>
+                            <div class="price-text">
+                              <p>
+                                0
+                              </p>
+                              <div class="small small--no-padding">
+                                <span>
+                                  Delivery Charge
+                                </span>
+                                <br>
+                                <span>
+                                  (Php 20 per day)
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="order-form--hr order-form--hr--total"></div>
+                          <div class="price-text d-flex">
+                            <div class="price-text price-text--left-aligned price-text--orange">
+                              <p>
+                                Php
+                              </p>
+                            </div>
+                            <div class="price-text price-text--orange">
+                              <p>
+                                0
+                              </p>
+                              <div class="small small--no-padding">
+                                <span>
+                                  Total Cost
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <input type="submit" value="Submit">
+                      <button class="btn--submit-form-contact btn--submit-form-contact--center" type="submit"> 
+                          <img src="assets/images/icons/icons8-paper-plane.svg" class="paper-plane">Submit Order
+                      </button>
                       </form>   
                     </div>
                   </div>
