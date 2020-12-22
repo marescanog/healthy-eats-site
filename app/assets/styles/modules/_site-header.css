@@ -142,7 +142,7 @@
 
             .site-header--dark & {
                 transform: scale(.63);
-                top: -20px;
+                top: -21px;
                 border-radius: 0 0 0 0;
             }
         }
