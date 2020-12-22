@@ -6,15 +6,19 @@ import Accordion from './modules/Accordion'
 
 
 var homeUrl = 'index.html';
+var faqUrl = 'faqs';
 if ( window.location.href.indexOf(homeUrl) > 0){
     new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
     new RevealOnScroll(document.querySelectorAll(".testimonial"), 70);
 }
 
+if ( window.location.href.indexOf(faqUrl) > 0){
+    let accordion = new Accordion();
+}
 
 let stickyHeader = new StickyHeader();
 let mobileMenu = new MobileMenu();
-let accordion = new Accordion();
+
 
 if (module.hot) {
     module.hot.accept()

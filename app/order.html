@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
@@ -7,6 +8,7 @@
   <meta name="keywords" content="healthy meals, meal bundles, weekly meal delivery service">
   <meta name="description" content="Your healthy meals. One delivery away. We create nutritious and flavorful meals that bring out the best in you.">
 </head>
+
 <body>
   <header class="site-header">
     <div class="wrapper">
@@ -42,41 +44,163 @@
       </picture>
     <div class = "large-hero__text-content large-hero__text-content__other-page">
       <div class = "wrapper">
-        <h1 class="large-hero__title large-hero__title__other-page">Order Page</h1>
-        <p class="large-hero__description">Descriptions</p>
+        <h1 class="large-hero__title large-hero__title__other-page">Order Now!</h1>
+        <p class="large-hero__description">Great tasting healthy meals one click away</p>
       </div>
     </div>
   </div>
    
-<div class="page-section">
-    <div class="wrapper wrapper--overflow-visible">
-        <div class="content-box">
+  <div class="page-section">
+      <div class="wrapper wrapper--overflow-visible">
+          <div class="content-box">
+              <!--Title-->
+              <div class="wrapper">
+                <div>
+                  <h2 class="headline headline--centered headline--light  headline--no-b-margin">
+                      One step away from <strong>Greatness!</strong>
+                  </h2>
+                  <div>
+                      <h3 class="headline headline--centered headline--blue headline--smaller headline--light headline--move-up">
+                          Fill up our Order Form
+                      </h3>
+                  </div>
+                </div>       
+              </div>
 
-            
+              <!--Order Form Start-->
+              <div class="wrapper wrapper--order-form">
+                <div class="row row--gutters">
+                  <!--Left Side of Order Form-->
+                  <div class="row__medium-8 row__medium-8--smaller2">
+                    <div class="order-form--left-side">
+                      <form action="">
+                        <!--Order Detail segment Start-->
+                          <div>
+                            <h5 class="order-form--selection-title">Order Details</h5>
+                            <div class="order-form--hr"></div>
+                          </div>
+                          <div class="order-form--contents order-form--contents--order-details">
+                            <div class="order-form--label-group">
+                              <label>Meal Plan</label>
+                              <span style="color: #f00;">*</span>
+                              <select id="meal-plan" name="meal-plan">
+                                <option value="Cal-Light">Calorie Light</option>
+                                <option value="Cal-Reg">Calorie Regular</option>
+                                <option value="Protein-Reg">Hi-Protein Regular</option>
+                                <option value="Protein-Heavy">Hi-Protein Heavy</option>
+                                <option value="Keto-Light">Keto Light</option>
+                                <option value="Keto-Reg">Keto Regular</option>
+                                <option value="Keto-Heavy">Keto Heavy</option>
+                              </select>
+                            </div>
+                            <div class="order-form--label-group-right">
+                              <label>Calories</label>
+                              <input id="Calories" type="text"  disabled>
+                            </div>
+                            <div class="order-form--label-group">
+                              <label>Start Date</label>
+                              <span style="color: #f00;">*</span>
+                              <input type="date" id="start-date" name="start-date" >
+                            </div>
+                            <div class="order-form--label-group-right">
+                              <label>No. of Weeks</label>
+                              <span style="color: #f00;">*</span>
+                              <select id="weeks" name="weeks">
+                                <option value=1>1</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                              </select>
+                            </div>
+                          </div>
+                          <!--Personal Details Segment Start-->
+                          <div>
+                            <h5 class="order-form--selection-title">Personal Details</h5>
+                            <div class="order-form--hr"></div>
+                          </div>
+                          <div class="order-form--contents order-form--contents--personal-details">
+                            <div class="order-form--label-group">
+                              <label>Full Name</label>
+                              <span style="color: #f00;">*</span>
+                              <input id="full-name" type="text">
+                            </div>
+                            <div class="order-form--label-group-right">
+                              <label>Email Address</label>
+                              <span style="color: #f00;">*</span>
+                              <input id="email-address" type="text">
+                            </div>
+                            <div class="order-form--label-group">
+                              <label>Contact number</label>
+                              <span style="color: #f00;">*</span>
+                              <input id="mobile-number" type="text">
+                            </div>
+                            <div class="order-form--label-group-right">
+                              <label>Food Allergy</label>
+                              <input id="Allergy" type="text">
+                            </div>
+                          </div>
+                          <!--Address Details Segment Start-->
+                          <div>
+                            <h5 class="order-form--selection-title">Delivery Details</h5>
+                            <div class="order-form--hr"></div>
+                          </div>
+                          <div class="order-form--contents">
+
+                            <div class="order-form--label-group-right">
+                              <label>Address</label>
+                              <span style="color: #f00;">*</span>
+                              <input id="Address" type="text">
+                              <p>Note: Please indicate House/Unit No./Building, Street, Barangay, City.</p>
+                            </div>
+                          </div>
+
+
+                      </div>
+                  </div>
+
+                  <!--Right Side of Order Form-->
+                  <div class="row__medium-4 row__medium-4--larger2 row__b-margin-until-medium">
+                    <div class="order-form--right-side">
+                      <h5 class="order-form--selection-title">Total Cost</h5>
+                      <div class="order-form--hr"></div>
+                      <div class="order-form--contents">
+                        <div class="order-form--total-cost-box">.</div>
+                      </div>
+                      <input type="submit" value="Submit">
+                      </form>   
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            <!--Order Form End-->
+        </div>          
+    </div>         
+  </div>
+
+  
+
+
+  <footer class="site-footer">
+    <picture>
+      <source srcset="assets/images/bottom-banner-hi.png" media="(min-width: 1020px)">
+      <source srcset="assets/images/bottom-banner-medium.png" media="(min-width: 800px)">
+          <source srcset="assets/images/bottom-banner-small.png" media="(min-width: 560px)">
+      <img src="assets/images/bottom-banner-smaller.png" alt="Healthy Eats bottom banner" class="bottom-banner">
+    </picture>
+  <div class="wrapper wrapper--overflow-visible">
+    <p>
+
+        <div class="site-footer__text-mid">
+          <a href="#"><img src="assets/images/icons/facebook.png" alt="icon"></a>
+          <a href="#"><img src="assets/images/icons/twitter.png" alt="icon"></a>
+          <a href="#"><img src="assets/images/icons/instagram.png" alt="icon"></a>
         </div>
-    </div>
-</div>
-
-
-<footer class="site-footer">
-  <picture>
-    <source srcset="assets/images/bottom-banner-hi.png" media="(min-width: 1020px)">
-    <source srcset="assets/images/bottom-banner-medium.png" media="(min-width: 800px)">
-        <source srcset="assets/images/bottom-banner-small.png" media="(min-width: 560px)">
-    <img src="assets/images/bottom-banner-smaller.png" alt="Healthy Eats bottom banner" class="bottom-banner">
-  </picture>
-<div class="wrapper wrapper--overflow-visible">
-  <p>
-
-      <div class="site-footer__text-mid">
-        <a href="#"><img src="assets/images/icons/facebook.png" alt="icon"></a>
-        <a href="#"><img src="assets/images/icons/twitter.png" alt="icon"></a>
-        <a href="#"><img src="assets/images/icons/instagram.png" alt="icon"></a>
-      </div>
-      <span class="site-footer__text">&copy; 2020 HealthyEats. All rights reserved.</span>
-  </p>
-</div>
-</footer>
+        <span class="site-footer__text">&copy; 2020 HealthyEats. All rights reserved.</span>
+    </p>
+  </div>
+  </footer>
 
   <script src= "bundled.js"></script>
 

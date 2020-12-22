@@ -1,0 +1,143 @@
+.order-form {
+
+    &--total-cost-box {
+        background-color: rgba(213,149,65,0.05);
+        width: 100%;
+        min-height: 600px;
+    }
+
+    &--right-adjust {
+        position: relative;
+    }
+
+    &--left-side{
+        padding-right: 0px;
+        min-width: 300px;
+
+        @mixin atSmall {
+            padding-right: 30px;
+            padding-left: 30px;
+            min-width: 400px;
+        }
+
+        @mixin atMedium {
+            padding-right: 30px;
+            padding-left: 5px;
+        }
+
+        @mixin atLarge {
+            padding-right: 60px;
+            background-color: white;
+        }
+    }
+
+    &--right-side{
+        padding-right: 0px;
+
+        @mixin atSmall {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        @mixin atMedium {
+            min-width: 300px;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+    }
+
+    &--label-group {
+        padding-right: 10px;
+        padding-bottom: 10px;
+
+        @mixin atMedium {
+            padding-right: 30px;
+        }
+    }
+
+    &--label-group-right {
+        padding-right: 10px;
+        padding-bottom: 10px;
+
+        @mixin atMedium {
+            padding-right: 0px;
+        }
+    }
+
+    &--contents{
+        padding-top: 1em;
+        padding-bottom: 1.5em;
+
+
+        &--order-details {
+            @mixin atMedium {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        
+        &--personal-details {
+            @mixin atMedium {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    
+        
+        input[type=text], select, input[type=number], input[type=date] {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+            border: 0;
+            height: auto;
+            padding: 13px 15px;
+            border-radius: 4px;
+            background-color: #F6F7FA;
+            color: #20202C;
+            width: 100%;
+        }
+
+        input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, select:focus {
+            outline: rgba(56,179,186,0.3) solid 3px;
+        }
+
+        label {
+            margin-left: 5px;
+            margin-bottom: 0.5em;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba(32,32,44,0.67);
+        }
+
+    }
+    
+    &--selection-title {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+
+
+    &--hr{
+        position: relative;
+        transform: translateY(-5px);
+        max-width: 400px;
+        max-height: 1px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(223, 215, 215, 0.336);
+        padding: 0.05rem 0;
+
+        @mixin atSmall {
+            max-width: 600px;
+        }
+    }
+
+    p{
+        padding:0;
+        margin:0;
+    }
+}
