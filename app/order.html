@@ -45,7 +45,7 @@
     <div class = "large-hero__text-content large-hero__text-content__other-page">
       <div class = "wrapper">
         <h1 class="large-hero__title large-hero__title__other-page">Order Now!</h1>
-        <p class="large-hero__description">Great tasting healthy meals one click away</p>
+        <p class="large-hero__description">Great tasting healthy meals delivered to you everyday</p>
       </div>
     </div>
   </div>
@@ -95,7 +95,7 @@
                             </div>
                             <div class="order-form--label-group-right">
                               <label>Calories</label>
-                              <input id="Calories" type="text" name="Calories" disabled>
+                              <input id="calories" type="text" name="calories" value="800 kCal" disabled>
                             </div>
                             <div class="order-form--label-group">
                               <label>Start Date</label>
@@ -106,10 +106,10 @@
                               <label>No. of Weeks</label>
                               <span style="color: #f00;">*</span>
                               <select id="weeks" name="weeks">
-                                <option value=1>1</option>
-                                <option value=2>2</option>
-                                <option value=3>3</option>
-                                <option value=4>4</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
                               </select>
                             </div>
                           </div>
@@ -166,17 +166,18 @@
                         <div class="order-form--total-cost-box">
                           <div class="price-text">
                             <p>
-                              2,300
+                              <span id="price-display">
+                                ₱ 1,500
+                              </span> 
                             </p>
                           </div>
                           <div class="small">
-                            <span>
+                            <span id="meal-name-display">
                               Calorie Light
                             </span>
                             <br>
-                            <span>
-                              1 week
-                            </span>
+                            <span id="week-number-display">1</span>
+                            <span id="week-display-plural">week</span>
                           </div>
                           <div class="price-text d-flex">
                             <div class="price-text price-text--left-aligned">
@@ -186,7 +187,9 @@
                             </div>
                             <div class="price-text">
                               <p>
-                                0
+                                <span id="delivery-charge-display">
+                                  ₱ 100
+                                </span>
                               </p>
                               <div class="small small--no-padding">
                                 <span>
@@ -208,7 +211,9 @@
                             </div>
                             <div class="price-text price-text--orange">
                               <p>
-                                0
+                                <span id="total-cost">
+                                  1,600
+                                </span>
                               </p>
                               <div class="small small--no-padding">
                                 <span>
