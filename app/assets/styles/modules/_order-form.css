@@ -94,27 +94,59 @@
             }
         }
     
-        
-        input[type=text], select, input[type=number], input[type=date], input[type=email] {
-            margin-top: 5px;
-            margin-bottom: 10px;
-            margin-left: 5px;
-            border: 0;
-            height: auto;
-            padding: 13px 15px;
-            border-radius: 4px;
-            background-color: #F6F7FA;
-            color: #20202C;
-            width: 78%;
-
-            @mixin atPhoneSize {
-                width: 100%;
+        &--feilds {
+            input[type=text], select, input[type=number], input[type=date], input[type=email] {
+                margin-top: 5px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+                border: 0;
+                height: auto;
+                padding: 13px 15px;
+                border-radius: 4px;
+                background-color: #faf6f6;
+                color: #20202C;
+                width: 78%;
+    
+                @mixin atPhoneSize {
+                    width: 100%;
+                }
+    
+    
             }
+    
+            input[type=text]:focus, input[type=number]:focus, input[type=date]:focus,input[type=email]:focus, select:focus {
+                outline: rgba(56,179,186,0.3) solid 3px;
+            }
+    
+        }
+        
+        &--feilds--red {
+            input[type=text], select, input[type=number], input[type=date], input[type=email] {
+                margin-top: 5px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+                border: 0;
+                height: auto;
+                padding: 13px 15px;
+                border-radius: 4px;
+                background-color: #faf6f6;
+                outline: red solid 2px;
+                color: #20202C;
+                width: 78%;
+    
+                @mixin atPhoneSize {
+                    width: 100%;
+                }
+    
+    
+            }
+    
+            input[type=text]:focus, input[type=number]:focus, input[type=date]:focus,input[type=email]:focus, select:focus {
+                outline: rgba(56,179,186,0.3) solid 3px;
+            }
+    
         }
 
-        input[type=text]:focus, input[type=number]:focus, input[type=date]:focus,input[type=email]:focus, select:focus {
-            outline: rgba(56,179,186,0.3) solid 3px;
-        }
 
         label {
             margin-left: 5px;
@@ -157,6 +189,7 @@
     }
 
 }
+
 
 .price-text {
     padding:10px;

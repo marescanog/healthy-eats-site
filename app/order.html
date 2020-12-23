@@ -74,17 +74,17 @@
                   <!--Left Side of Order Form-->
                   <div class="row__medium-8 row__medium-8--smaller2">
                     <div class="order-form--left-side">
-                      <form action="">
+                      <form id="form">
                         <!--Order Detail segment Start-->
                           <div>
                             <h5 class="order-form--selection-title">Order Details</h5>
                             <div class="order-form--hr"></div>
                           </div>
                           <div class="order-form--contents order-form--contents--order-details">
-                            <div class="order-form--label-group">
+                            <div class="order-form--label-group order-form--contents--feilds">
                               <label>Meal Plan</label>
                               <span style="color: #f00;">*</span>
-                              <select id="meal-plan" name="meal-plan">
+                              <select id="meal-plan" name="meal-plan" >
                                 <option value="Cal-Light">Calorie Light</option>
                                 <option value="Cal-Reg">Calorie Regular</option>
                                 <option value="Protein-Reg">Hi-Protein Regular</option>
@@ -94,11 +94,11 @@
                                 <option value="Keto-Heavy">Keto Heavy</option>
                               </select>
                             </div>
-                            <div class="order-form--label-group-right">
+                            <div class="order-form--label-group-right order-form--contents--feilds">
                               <label>Calories</label>
                               <input id="calories" type="text" name="calories" value="800 kCal" disabled>
                             </div>
-                            <div class="order-form--label-group">
+                            <div class="order-form--label-group order-form--contents--feilds">
                               <label>Start Date</label>
                               <span style="color: #f00;">*</span>
                               <input id="flatpickr" name="start-date" placeholder="Select Date...">
@@ -106,10 +106,10 @@
                                 <p>Note: Deliveries Always Start on a Monday. Cut-off period for the week is every Saturday.</p>
                               </div>
                             </div>
-                            <div class="order-form--label-group-right">
+                            <div class="order-form--label-group-right order-form--contents--feilds">
                               <label>No. of Weeks</label>
                               <span style="color: #f00;">*</span>
-                              <select id="weeks" name="weeks">
+                              <select id="weeks" name="weeks required">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -123,22 +123,22 @@
                             <div class="order-form--hr"></div>
                           </div>
                           <div class="order-form--contents order-form--contents--personal-details">
-                            <div class="order-form--label-group">
+                            <div class="order-form--label-group order-form--contents--feilds">
                               <label>Full Name</label>
                               <span style="color: #f00;">*</span>
-                              <input id="full-name" type="text">
+                              <input id="full-name" type="text" >
                             </div>
-                            <div class="order-form--label-group-right">
+                            <div class="order-form--label-group-right order-form--contents--feilds">
                               <label>Email Address</label>
                               <span style="color: #f00;">*</span>
-                              <input id="email-address" type="email">
+                              <input id="email-address" type="email" >
                             </div>
-                            <div class="order-form--label-group">
+                            <div class="order-form--label-group order-form--contents--feilds">
                               <label>Contact number</label>
                               <span style="color: #f00;">*</span>
-                              <input id="mobile-number" type="text">
+                              <input id="mobile-number" type="text" >
                             </div>
-                            <div class="order-form--label-group-right">
+                            <div class="order-form--label-group-right order-form--contents--feilds">
                               <label>Food Allergy</label>
                               <input id="Allergy" type="text">
                             </div>
@@ -149,10 +149,10 @@
                             <div class="order-form--hr"></div>
                           </div>
                           <div class="order-form--contents">
-                            <div class="order-form--label-group-right">
+                            <div id="addressError" class="order-form--label-group-right order-form--contents--feilds">
                               <label>Address</label>
                               <span style="color: #f00;">*</span>
-                              <input id="Address" type="text">
+                              <input id="Address" type="text" >
                               <p>Note: Please indicate House/Unit No./Building, Street, Barangay, City.</p>
                             </div>
                           </div>

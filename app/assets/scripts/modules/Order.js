@@ -1,10 +1,29 @@
 import Meal from './Meal_item'
+import flatpickr from "../../images/otherUIElements/flatpickr";
 
 class Order{
     constructor() {
+        this.fp = flatpickr('#flatpickr',{
+            "disable": [
+              function(date) {
+              // return true to disable
+              return (date.getDay() === 0 || date.getDay() === 6 || date.getDay() === 2
+              || date.getDay() === 3 || date.getDay() === 4 || date.getDay() === 5);
+                }
+              ],
+              "locale": {
+                  "firstDayOfWeek": 0 // start week on Sunday
+              },
+              minDate: new Date().fp_incr(2),
+              altInput: true,
+              altFormat: "F j, Y",
+              dateFormat: "Y-m-d",             
+              });
        // this.menuIcon = document.querySelector(".site-header__menu-icon")
       //  this.menuContent = document.querySelector(".site-header__menu-content")
        // this.menuBorder = document.querySelector(".site-header__menu-icon-border")
+        //Get the Form
+        this.form = document.getElementById('form');
         //label feild input values
         this.weeksSelect = document.getElementById('weeks');
         this.mealSelect = document.getElementById('meal-plan');
@@ -17,6 +36,9 @@ class Order{
         this.weekPluralDisplay = document.getElementById('week-display-plural');
         this.deliveryChargeDisplay = document.getElementById('delivery-charge-display');
         this.totalCost = document.getElementById('total-cost');
+        //Error Feilds
+        this.addressError = document.getElementById('addressError');
+
         this.meals = {
             "Cal-Light": new Meal("Calorie Light", 1500, 800),
             "Cal-Reg": new Meal("Calorie Regular", 2300, 1200),
@@ -26,14 +48,27 @@ class Order{
             "Keto-Reg": new Meal("Keto Regular", 2300, 1350),
             "Keto-Heavy": new Meal("Keto heavy", 2800, 1800)
         };        
-        this.events()
+        this.events(this)
     }
 
-    events() {
+    events(order) {
        // this.menuIcon.addEventListener("click", () => this.toggleTheMenu());
        this.mealSelect.addEventListener('change', () => this.updateCalories());
-       this.weeksSelect.addEventListener('change', () => this.updatePricePerWeek());      
+       this.weeksSelect.addEventListener('change', () => this.updatePricePerWeek()); 
+
+       this.form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            console.log("submit");
+            console.log(order.fp.selectedDates);
+            order.toggleError(order);
+       })   ; 
     }
+
+    toggleError(order) {
+         order.addressError.classList.toggle("order-form--contents--feilds--red")
+    }
+      
+
 
     updateCalories() {
         var key = this.mealSelect.value;
