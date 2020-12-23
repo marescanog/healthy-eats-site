@@ -237,5 +237,31 @@
         grid-template-columns: 1fr;
         padding-right: 20px;
         margin-left: auto;
+
+    }
+}
+
+.p-block {
+
+    max-width: 225px;
+    @mixin atPhoneSize {
+        max-width: 300px;
+    }
+
+    @mixin atSmall {
+        max-width: 600px;
+    }
+
+    @mixin atMedium {
+        max-width: 400px;
+    }
+    p{
+        text-align: justify;
+        margin-left: 5px;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        font-size: 0.8em;
+        line-height: 17px;
+        color: rgba(213,149,65,0.67);
     }
 }

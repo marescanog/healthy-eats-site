@@ -9,6 +9,7 @@ class Order{
         this.weeksSelect = document.getElementById('weeks');
         this.mealSelect = document.getElementById('meal-plan');
         this.calories = document.getElementById('calories');
+        this.dateSelect = document.getElementById('flatpickr');
         //text display
         this.priceDisplay = document.getElementById('price-display');
         this.mealNameDisplay = document.getElementById('meal-name-display');
@@ -31,9 +32,8 @@ class Order{
     events() {
        // this.menuIcon.addEventListener("click", () => this.toggleTheMenu());
        this.mealSelect.addEventListener('change', () => this.updateCalories());
-       this.weeksSelect.addEventListener('change', () => this.updatePricePerWeek())
+       this.weeksSelect.addEventListener('change', () => this.updatePricePerWeek());      
     }
-
 
     updateCalories() {
         var key = this.mealSelect.value;
@@ -73,6 +73,23 @@ class Order{
    // this.menuBorder.classList.toggle("site-header__menu-icon-border--is-expanded")
    // this.menuIcon.classList.toggle("site-header__menu-icon--close-x")
     }
+
+    /*
+        checkMonday() {
+        var current = new Date(); //current Day
+        var computeNextMonday = 8 - current.getDay(); 
+        var followingMonday;
+        if (current.getDate != 0) {
+            followingMonday = new Date(current.getTime() + (86400000*computeNextMonday)); // + 1 day in ms
+        }
+        else {
+            followingMonday = new Date(current.getTime() + 86400000*8); // if Sunday then did not reach cutoff
+        }
+
+        //followingDay.toLocaleDateString();
+        console.log( followingMonday.toLocaleDateString());
+    }
+    */
 }
 
 export default Order;

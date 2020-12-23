@@ -7,6 +7,7 @@
   <title>Healthy Eats</title>
   <meta name="keywords" content="healthy meals, meal bundles, weekly meal delivery service">
   <meta name="description" content="Your healthy meals. One delivery away. We create nutritious and flavorful meals that bring out the best in you.">
+  <script src="assets/images/otherUIElements/flatpickr.js"></script>
 </head>
 
 <body>
@@ -100,7 +101,10 @@
                             <div class="order-form--label-group">
                               <label>Start Date</label>
                               <span style="color: #f00;">*</span>
-                              <input type="date" id="start-date" name="start-date" >
+                              <input id="flatpickr" name="start-date" placeholder="Select Date...">
+                              <div class="p-block">
+                                <p>Note: Deliveries Always Start on a Monday. Cut-off period for the week is every Saturday.</p>
+                              </div>
                             </div>
                             <div class="order-form--label-group-right">
                               <label>No. of Weeks</label>

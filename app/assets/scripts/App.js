@@ -4,6 +4,7 @@ import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader'
 import Accordion from './modules/Accordion'
 import Order from './modules/Order'
+import DatePickerSettings from './modules/DatePickerSettings'
 
 
 var homeUrl = 'index.html';
@@ -20,10 +21,12 @@ if ( window.location.href.indexOf(faqUrl) > 0){
 
 if ( window.location.href.indexOf(orderUrl) > 0){
     let order = new Order();
+    let datePickerSettings = new DatePickerSettings;
 }
 
 let stickyHeader = new StickyHeader();
 let mobileMenu = new MobileMenu();
+
 
 
 if (module.hot) {
