@@ -29,6 +29,12 @@ class Order{
         this.mealSelect = document.getElementById('meal-plan');
         this.calories = document.getElementById('calories');
         this.dateSelect = document.getElementById('flatpickr');
+        this.email = document.getElementById('email-address');
+        this.inputArr = [
+            document.getElementById('full-name'), 
+            document.getElementById('mobile-number'),
+            document.getElementById('Address'),
+        ];       
         //text display
         this.priceDisplay = document.getElementById('price-display');
         this.mealNameDisplay = document.getElementById('meal-name-display');
@@ -37,7 +43,13 @@ class Order{
         this.deliveryChargeDisplay = document.getElementById('delivery-charge-display');
         this.totalCost = document.getElementById('total-cost');
         //Error Feilds
-        this.addressError = document.getElementById('addressError');
+        this.dateError = document.getElementById('dateError');
+        this.emailError = document.getElementById('emailError');
+        this.errorFeildArr = [
+            document.getElementById('nameError'),
+            document.getElementById('contact-numberError'), 
+            document.getElementById('addressError'),
+        ];
 
         this.meals = {
             "Cal-Light": new Meal("Calorie Light", 1500, 800),
@@ -59,16 +71,56 @@ class Order{
        this.form.addEventListener('submit', (e) => {
             e.preventDefault();
             console.log("submit");
-            console.log(order.fp.selectedDates);
-            order.toggleError(order);
+            order.errorValidation();
+
        })   ; 
     }
 
-    toggleError(order) {
-         order.addressError.classList.toggle("order-form--contents--feilds--red")
+    errorValidation(){
+        this.emailValidation();
+        this.dateValidation();
+        this.checkRequired();
     }
-      
 
+    emailValidation() {
+        if(this.email.value.trim() === ''){
+            this.emailError.classList.toggle("order-form--contents--feilds--red", true)
+        }
+        else if(!(this.isValidEmail(this.email.value))) {
+            this.emailError.classList.toggle("order-form--contents--feilds--red", true)
+        } else {
+            this.emailError.classList.toggle("order-form--contents--feilds--red", false)
+        }
+    }
+
+    dateValidation() {
+        //console.log(order.fp.selectedDates);
+        if(this.fp.selectedDates.length === 0) {
+            this.dateError.classList.toggle("order-form--contents--feilds--red", true);
+        } else {
+            this.dateError.classList.toggle("order-form--contents--feilds--red", false);
+        }
+    }
+
+    checkRequired() {
+        //loop through array inputArr & modify array errorFeildArr
+        var i;
+        for (i = 0; i < this.inputArr.length; i++) {
+            if(this.inputArr[i].value.trim() === '') {
+                this.errorFeildArr[i].classList.toggle("order-form--contents--feilds--red", true);
+            }
+            else {
+                this.errorFeildArr[i].classList.toggle("order-form--contents--feilds--red", false);
+            }
+        }
+    }
+
+
+    //Check email is Valid
+    isValidEmail(email){
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
 
     updateCalories() {
         var key = this.mealSelect.value;
