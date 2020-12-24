@@ -272,6 +272,11 @@
         margin-left: auto;
 
     }
+
+    span:hover {
+       text-decoration: underline;
+       cursor: pointer;
+      }
 }
 
 .p-block {

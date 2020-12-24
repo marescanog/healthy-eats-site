@@ -38,6 +38,15 @@
         max-width: 976px;
     }
 
+    &--large {
+        max-width: 750px;
+    }
+
+    &--Xlarge {
+        max-width: 850px;
+    }
+
+
     &--no-padding-until-medium {
         padding-left: 0px;
         padding-right: 0px;

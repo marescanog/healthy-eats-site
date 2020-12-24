@@ -19,11 +19,10 @@ class Order{
               altFormat: "F j, Y",
               dateFormat: "Y-m-d",             
               });
-       // this.menuIcon = document.querySelector(".site-header__menu-icon")
-      //  this.menuContent = document.querySelector(".site-header__menu-content")
-       // this.menuBorder = document.querySelector(".site-header__menu-icon-border")
-        //Get the Form
+
+        //Form Values
         this.form = document.getElementById('form');
+        this.checkBox = document.getElementById('terms-checkbox');
         //label feild input values
         this.weeksSelect = document.getElementById('weeks');
         this.mealSelect = document.getElementById('meal-plan');
@@ -50,7 +49,17 @@ class Order{
             document.getElementById('contact-numberError'), 
             document.getElementById('addressError'),
         ];
-
+        //Modals
+        this.modalNoticeOverlay = document.getElementById('modal-notice');
+        this.button_closeModalNotice = document.getElementById('button-close-notif');
+        this.modalNotif = document.getElementById('modal-notif');
+        this.errorModalOverlay = document.getElementById('modal-error-overlay');
+        this.errorModal = document.getElementById('modal-error');
+        this.errorModalCloseButton = document.getElementById('button-close-error');
+        this.termsModalOverlay = document.getElementById('modal-terms-notif-overlay');
+        this.termsModal = document.getElementById('modal-terms-notif');
+        this.termsModalCloseButton = document.getElementById('button-close-terms-notif');
+        //Data
         this.meals = {
             "Cal-Light": new Meal("Calorie Light", 1500, 800),
             "Cal-Reg": new Meal("Calorie Regular", 2300, 1200),
@@ -64,25 +73,61 @@ class Order{
     }
 
     events(order) {
-       // this.menuIcon.addEventListener("click", () => this.toggleTheMenu());
+       //Modals
+       this.button_closeModalNotice.addEventListener("click", () => this.toggle_ModalNotice());
+       this.errorModalCloseButton.addEventListener("click", () => this.toggleModalError());
+       this.termsModalCloseButton.addEventListener("click", () => this.toggleModalTerms());
+        //Forms
        this.mealSelect.addEventListener('change', () => this.updateCalories());
        this.weeksSelect.addEventListener('change', () => this.updatePricePerWeek()); 
 
        this.form.addEventListener('submit', (e) => {
             e.preventDefault();
-            console.log("submit");
             order.errorValidation();
-
        })   ; 
     }
 
+    toggleModalTerms() {
+        this.termsModalOverlay.classList.toggle("modal-overlay--show-modal");
+        this.termsModal.classList.toggle("modal--box--show");
+        this.termsModal.classList.toggle("open");
+        this.termsModal.classList.toggle("close");
+    }
+
+    toggleModalError() {
+        this.errorModalOverlay.classList.toggle("modal-overlay--show-modal");
+        this.errorModal.classList.toggle("modal--box--show");
+        this.errorModal.classList.toggle("open");
+        this.errorModal.classList.toggle("close");
+    }
+
+    toggle_ModalNotice(){
+        this.modalNoticeOverlay.classList.toggle("modal-overlay--show-modal");
+    }
+
     errorValidation(){
-        this.emailValidation();
-        this.dateValidation();
-        this.checkRequired();
+        var isEmailValid = this.emailValidation();
+        var isDateValid = this.dateValidation();
+        var isDataValid = this.checkRequired();
+
+        if (isEmailValid && isDateValid && isDataValid) {
+            if(!this.checkBox.checked) {
+                //Show Terms Modal
+                this.toggleModalTerms();
+            } else {
+
+                //Redirect To Sucess Page
+                window.location.replace("success.html");
+            }
+        }
+        else {
+            //Show Error Modal
+            this.toggleModalError();
+        }
     }
 
     emailValidation() {
+        var retval = false;
         if(this.email.value.trim() === ''){
             this.emailError.classList.toggle("order-form--contents--feilds--red", true)
         }
@@ -90,20 +135,30 @@ class Order{
             this.emailError.classList.toggle("order-form--contents--feilds--red", true)
         } else {
             this.emailError.classList.toggle("order-form--contents--feilds--red", false)
+            retval = true;
         }
+        return retval;
     }
 
     dateValidation() {
+        var retval = false;
         //console.log(order.fp.selectedDates);
         if(this.fp.selectedDates.length === 0) {
             this.dateError.classList.toggle("order-form--contents--feilds--red", true);
         } else {
             this.dateError.classList.toggle("order-form--contents--feilds--red", false);
+            retval = true;
         }
+        return retval;
     }
 
     checkRequired() {
         //loop through array inputArr & modify array errorFeildArr
+        var retvalArr = [
+            false,
+            false,
+            false,
+        ];
         var i;
         for (i = 0; i < this.inputArr.length; i++) {
             if(this.inputArr[i].value.trim() === '') {
@@ -111,8 +166,11 @@ class Order{
             }
             else {
                 this.errorFeildArr[i].classList.toggle("order-form--contents--feilds--red", false);
+                retvalArr[i] = true;
             }
         }
+
+        return retvalArr[0] && retvalArr[1] && retvalArr[2]; 
     }
 
 

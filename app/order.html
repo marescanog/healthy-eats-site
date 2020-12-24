@@ -232,12 +232,12 @@
                       <div class="terms-conditions">
                         <div class="terms-conditions terms-conditions--right">
                           <p>
-                            <input type="checkbox">
+                            <input id="terms-checkbox" type="checkbox">
                           </p>
                         </div>
                         <div >
                           <p>
-                            I have read and agreed to all the <strong><span>Terms & Conditions</span></strong> by Healthy Eats.
+                            I have read and agreed to all the <strong><a href="terms.html" target="_blank">Terms & Conditions</a></strong> by Healthy Eats.
                           </p>
                         </div>
                       </div>
@@ -280,29 +280,74 @@
   </div>
   </footer>
 
-  <script src= "bundled.js"></script>
-
-  
-  <!-- <script src= "bundled.js"> 
-
-  </script> -->
-  <!-- Leave this commented out HTML here until you need it for an upcoming "modal" lesson
-  <div class="modal">
-    <div class="modal__inner">
-      <h2 class="section-title section-title--blue section-title--less-margin"><img src="assets/images/icons/mail.svg" class="section-title__icon"> Get in <strong>Touch</strong></h2>
-      <div class="wrapper wrapper--narrow">
-        <p class="modal__description">We will have an online order system in place soon. Until then, connect with us on any of the platforms below!</p>
+  <div id="modal-notice" class="modal-overlay modal-overlay--show-modal">
+    <div id="modal-notif" class="modal--box modal--box--show open">
+      <div >
+        <img class="modal--image" src="assets/images/icons/high-importance.svg">
       </div>
-
-      <div class="social-icons">
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/facebook.svg" alt="Facebook"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/instagram.svg" alt="Instagram"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/youtube.svg" alt="YouTube"></a>
+      <div class="modal--title">
+          Notice
+      </div>
+      <div class="modal--text">
+        Our weekly delivery cut-off for order reservations closes every Saturday. Any orders placed before the cutoff will be considered an early booking for next week.      
+      </div>
+      <div class="button--footer">
+        <div class="modal--button modal--button--cancel">
+          <a href="index.html" style="text-decoration: none;">
+            Go Back
+          </a>
+        </div>
+        <div>
+          <button id="button-close-notif" class="modal--button">
+            Continue
+          </button>
+        </div>
       </div>
     </div>
-    <div class="modal__close">X</div>
   </div>
-  This is the end of the "modal" reference HTML -->
+
+  <div id="modal-error-overlay" class="modal-overlay">
+    <div id="modal-error" class="modal--box close">
+      <div >
+        <img class="modal--image" src="assets/images/icons/error.svg">
+      </div>
+      <div class="modal--title">
+          Required Feilds
+      </div>
+      <div class="modal--text">
+        One or more fields have an error or is mising information. Please check and try again.      
+      </div>
+      <div >
+        <div>
+          <button id="button-close-error" class="modal--button modal--button">
+            okay
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-terms-notif-overlay" class="modal-overlay">
+    <div id="modal-terms-notif" class="modal--box modal--box--terms close">
+      <div >
+        <img class="modal--image" src="assets/images/icons/high-importance.svg">
+      </div>
+      <div class="modal--title">
+          Please agree to terms and conditions
+      </div>
+      <div class="modal--text">
+          Click on this <a href="terms.html" target="_blank">terms and conditions link</a> to view the details. A new window will open with the terms and conditions. After reading the terms, please check the checkbox on the order page to indicate that you agree to the terms and conditions and try submitting the order again.      
+      </div>
+      <div >
+        <div>
+          <button id="button-close-terms-notif" class="modal--button">
+            Okay
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src= "bundled.js"></script>
 </body>
 </html>
