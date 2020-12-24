@@ -105,6 +105,15 @@
         margin-bottom: 10px;
         margin-left: 5px;
 
+
+        input[type=text], input[type=email], textarea {
+            max-width:235px;
+            @mixin atMini {
+                max-width:none;
+                
+            }
+        }
+
         input[type=text]:focus, input[type=email]:focus {
             outline: rgba(56,179,186,0.3) solid 3px;
         }
@@ -113,6 +122,10 @@
             outline: rgba(56,179,186,0.3) solid 3px;
         }
 
+    }
+
+    label{
+        padding-left: 15px;
     }
 }
 

@@ -1,4 +1,10 @@
 
+@define-mixin atMini {
+    @media (min-width:400px){
+        @mixin-content;
+    }
+}
+
 @define-mixin atPhoneSize {
     @media (min-width:460px){
         @mixin-content;
