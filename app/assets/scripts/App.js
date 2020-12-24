@@ -4,6 +4,7 @@ import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader'
 import Accordion from './modules/Accordion'
 import Order from './modules/Order'
+import ContactForm from './modules/ContactForm'
 
 
 var homeUrl = 'index.html';
@@ -22,8 +23,13 @@ if ( window.location.href.indexOf(orderUrl) > 0){
     let order = new Order();
 }
 
+if ( window.location.href.indexOf('contact') > 0){
+    let contactForm = new ContactForm();
+}
+
 let stickyHeader = new StickyHeader();
 let mobileMenu = new MobileMenu();
+
 
 
 

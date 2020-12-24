@@ -46,6 +46,10 @@
         max-width: 850px;
     }
 
+    &--small {
+        max-width: 500px;
+    }
+
 
     &--no-padding-until-medium {
         padding-left: 0px;
@@ -86,6 +90,15 @@
 
     }
 
+    &--b-margin-large {
+        margin-bottom: 1rem;
+
+        @mixin atSmall {
+            margin-bottom: 2rem;
+        }
+
+    }
+
     &--b-padding {
         padding-bottom: 1rem;
 
@@ -94,6 +107,7 @@
         }
 
     }
+    
 
     &--high-z {
         z-index: 20;
