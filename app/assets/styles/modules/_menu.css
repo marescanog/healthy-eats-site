@@ -1,0 +1,117 @@
+.menu {
+    display: flex;  
+    width:max-content;
+    margin: 0;
+    &--row {
+        display: flex;  
+    }
+
+    &--row-content {
+        flex-direction: column;
+        padding: 7.5px;
+
+    }
+
+    &--row-square {
+        width: 166px;
+        padding: 12px;
+        height: 166px;
+        background: #FFF;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 3px 45px 0 rgba(63,92,117,0.1);
+        p{
+            margin: 0px;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: rgba(32,32,44,0.67);
+        }
+    }
+
+    &--row-header {
+        width: 100%;
+        flex-basis: 100%;
+        padding-right: 0px;
+        flex: 1;
+        display: flex;
+        box-sizing: inherit;
+        align-items: center;
+        margin-left: auto;
+
+        h5{
+            text-align: left;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            flex: 1;
+            margin: 0;
+            font-size: 21px;
+            font-weight: 700;
+            color: #F5A521;
+            margin-block-start: 1.67em;
+            margin-block-end: 1.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            display: block;
+        }
+
+    }
+    &--body{
+        display: block;
+        box-sizing: inherit;
+        background: #fff;
+        font-size: 16px;
+        overflow: visible;
+        color: #20202C;
+        text-align: left;
+    }
+
+    &--title-icon {
+        transform: translate(10px, 13px);
+        @mixin atSmall{
+            transform: translate(30px, 25px);
+        }
+
+    }
+
+    &--tab-header {
+        margin-bottom: 30px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+
+        button {
+            border: none;
+            font-size: 21px;
+            font-weight: 700;
+            background: none;
+            text-align: center;
+            color: rgba(32,32,44,0.2);
+            line-height: 1;
+            padding: .6em 1em .4em;
+        }
+
+        button:hover{
+            color: rgba(32,32,44,1);
+        }
+    }
+}
+
+.day {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0px;
+    letter-spacing: 1.86px;
+    text-transform: uppercase;
+    color: rgba(32,32,44,0.2);
+}
+
+.row{
+    display: flex;
+    overflow: visible;
+    padding-bottom: 30px;
+}
