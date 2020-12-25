@@ -1,8 +1,11 @@
 .menu-UI{
-
     display: flex;  
     width:max-content;
     margin: 0;
+
+    &--body {
+        padding-bottom:30px;
+    }
 
     &--visible {
         display: block;
