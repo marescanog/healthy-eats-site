@@ -23,5 +23,6 @@
 @import "modules/_order-form";
 @import "modules/_flatpickr.min";
 @import "modules/_modal";
+@import "modules/_menu-UI";
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed&family=Ubuntu:wght@700&display=swap');

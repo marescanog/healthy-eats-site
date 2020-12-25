@@ -53,6 +53,13 @@
         margin-bottom: 2rem;
     }
 
+    &__small-2 {
+        justify-content: center;
+        display: grid;
+    }
+
+
+
     @mixin atMediumL {
         &__contact {
             float: left;
@@ -60,7 +67,7 @@
         }
     }
 
-
+        
     @mixin atMedium {
 
         &__b-margin-until-medium {
@@ -97,6 +104,23 @@
         &__medium-8--smaller2{
             width: 50%;
             padding-right: 0px;
+        }
+    
+    }
+
+    @mixin atMenuDesktop {
+
+        &__small-2 {
+            display: flex;
+            float: left;
+            width: 10%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        &_small-10 {
+            float: left;
+            width: 90%;
+            background-color: rgb(255, 255, 255);
         }
     }
 

@@ -59,6 +59,19 @@
     }
 }
 
+@define-mixin atMenuDesktop {
+    @media (min-width:1200px){
+        @mixin-content;
+    }
+}
+
+@define-mixin atMenuFlexWrap {
+    @media (min-width:990px){
+        @mixin-content;
+    }
+}
+
+
 @define-mixin clearfix {
     &::after{
         content: "";

@@ -1,7 +1,62 @@
-.menu {
+.menu-UI{
+
     display: flex;  
     width:max-content;
     margin: 0;
+
+    &--desktop {
+        display: none;  
+        @mixin atSmall {
+            display: block;  
+        }
+    }
+
+    &--mobile {
+        display: block;  
+        @mixin atSmall {
+            display: none;  
+        }
+    }
+
+    &--day {
+        font-size: 13px;
+        font-weight: 700;
+        text-align: left;
+        margin: 20px 0px;
+        letter-spacing: 1.86px;
+        text-transform: uppercase;
+        color: rgba(32,32,44,0.2);
+
+        @mixin atSmall {
+            text-align: center;
+        }
+    }
+    
+    &--menu-organization-of-rows{
+        padding-bottom: 30px;
+        max-width: 1200px;
+        display: grid;
+        justify-content: center;
+
+        @mixin atSmall {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            max-width: 400px;
+        }
+
+        @mixin atMedium {
+            max-width: 600px;
+        }
+
+        @mixin atMenuFlexWrap {
+            display: flex;
+            max-width: none;
+        }
+    }
+
     &--row {
         display: flex;  
     }
@@ -13,13 +68,21 @@
     }
 
     &--row-square {
-        width: 166px;
-        padding: 12px;
+        display: grid;
+        width: 90vw;
         height: 166px;
+        padding:12px;
         background: #FFF;
         align-items: center;
         justify-content: center;
         box-shadow: 0 3px 45px 0 rgba(63,92,117,0.1);
+
+        @mixin atSmall {
+            display: flex;
+            width: 166px;
+            height: 166px;
+        }
+
         p{
             margin: 0px;
             font-size: 14px;
@@ -38,32 +101,26 @@
         box-sizing: inherit;
         align-items: center;
         margin-left: auto;
+        margin-top: auto;
+        height: 54px;
 
+        @mixin atMenuDesktop {
+            height: 265px;
+        }
         h5{
             text-align: left;
-            margin-top: 30px;
-            margin-bottom: 20px;
             flex: 1;
             margin: 0;
             font-size: 21px;
             font-weight: 700;
             color: #F5A521;
-            margin-block-start: 1.67em;
-            margin-block-end: 1.67em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
             display: block;
+
+            margin-top: 30px;
+            margin-bottom: 0px;
+
         }
 
-    }
-    &--body{
-        display: block;
-        box-sizing: inherit;
-        background: #fff;
-        font-size: 16px;
-        overflow: visible;
-        color: #20202C;
-        text-align: left;
     }
 
     &--title-icon {
@@ -98,20 +155,4 @@
             color: rgba(32,32,44,1);
         }
     }
-}
-
-.day {
-    font-size: 13px;
-    font-weight: 700;
-    text-align: center;
-    margin: 20px 0px;
-    letter-spacing: 1.86px;
-    text-transform: uppercase;
-    color: rgba(32,32,44,0.2);
-}
-
-.row{
-    display: flex;
-    overflow: visible;
-    padding-bottom: 30px;
 }
