@@ -4,6 +4,14 @@
     width:max-content;
     margin: 0;
 
+    &--visible {
+        display: block;
+    }
+    &--hidden {
+        display: none;
+    }
+
+
     &--desktop {
         display: none;  
         @mixin atSmall {
@@ -26,9 +34,17 @@
         letter-spacing: 1.86px;
         text-transform: uppercase;
         color: rgba(32,32,44,0.2);
+        display: block;
 
         @mixin atSmall {
             text-align: center;
+        }
+
+        @mixin atMenuDesktop {
+            display: none;
+            &--first {
+                display: block;
+            }
         }
     }
     
@@ -54,6 +70,10 @@
         @mixin atMenuFlexWrap {
             display: flex;
             max-width: none;
+        }
+
+        @mixin atMenuDesktop {
+            padding-bottom: 0px;
         }
     }
 
@@ -105,7 +125,11 @@
         height: 54px;
 
         @mixin atMenuDesktop {
-            height: 265px;
+            height: 135px;
+
+            &--first {
+                height: 230px;
+            }
         }
         h5{
             text-align: left;
@@ -140,19 +164,38 @@
         margin-bottom: 0;
         list-style: none;
 
-        button {
-            border: none;
-            font-size: 21px;
-            font-weight: 700;
-            background: none;
-            text-align: center;
-            color: rgba(32,32,44,0.2);
-            line-height: 1;
-            padding: .6em 1em .4em;
-        }
+        &-button {
+            button {
+                border: none;
+                font-size: 21px;
+                font-weight: 700;
+                background: none;
+                text-align: center;
+                color: rgba(32,32,44,0.2);
+                line-height: 1;
+                padding: .6em 1em .4em;
+                outline: none;
+            }
+    
+            &--select {
+                button{
+                    color: rgba(32,32,44,1);
+                }
 
-        button:hover{
-            color: rgba(32,32,44,1);
+                button::after {
+                    content: "";
+                    height: 4px;
+                    width: 30px;
+                    display: block;
+                    margin: 15px auto 0 auto;
+                    background-color: transparent;
+                    background-color: #F5A521;
+                }
+            }
+    
+            button:hover{
+                color: rgba(32,32,44,1);
+            }
         }
     }
 }

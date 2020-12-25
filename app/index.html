@@ -175,22 +175,86 @@
       </div>
 
       <div class="menu-UI--tab-header">
-        <button>Calorie</button>
-        <button>Hi-Protein</button>
-        <button>Keto</button>
+        <div class="menu-UI--tab-header-button menu-UI--tab-header-button--select">
+          <button id="Calorie-button">Calorie</button>
+        </div>
+        <div class="menu-UI--tab-header-button">
+          <button id="Protein-button">Hi-Protein</button>
+        </div>
+        <div class="menu-UI--tab-header-button">
+          <button id="Keto-button">Keto</button>
+        </div>
       </div>
 
       <!--Menu UI Starts-->
       <div class="menu-body">
         <!--Meal Category Starts/Calories-->
-        <div id="Calories" style="overflow: visible;">
+        <div id="Calories" class="menu-UI--visible">
           <!--DESKTOP GROUPING STARTS-->
           <div class="menu-UI--desktop">
             <!--Lunch-breakfast-dinner groupings Starts-->
             <div class="row">
               <div class="row__small-2">
-                <div class="menu-UI--row-header">
+                <div class="menu-UI--row-header menu-UI--row-header--first">
                   <h5>Breakfast</h5>
+                </div>
+              </div>
+              <div class="row__small-10">
+                <div class="menu-UI--menu-organization-of-rows">
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day menu-UI--day--first">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day menu-UI--day--first">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day menu-UI--day--first">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day menu-UI--day--first">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day menu-UI--day--first">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Lunch-breakfast-dinner groupings ENDS-->
+            <!--Lunch-breakfast-dinner groupings Starts-->
+            <div class="row">
+              <div class="row__small-2">
+                <div class="menu-UI--row-header">
+                  <h5>Lunch</h5>
                 </div>
               </div>
               <div class="row__small-10">
@@ -248,7 +312,7 @@
             <div class="row">
               <div class="row__small-2">
                 <div class="menu-UI--row-header">
-                  <h5>Breakfast</h5>
+                  <h5>Dinner</h5>
                 </div>
               </div>
               <div class="row__small-10">
@@ -306,7 +370,7 @@
           <!--DESKTOP GROUPING ENDS-->
           <!--MOBILE GROUPING STARTS-->
           <div class="menu-UI--mobile">
-              <!--Days of the Week Menu Item Grouping Starts-->
+            <!--Days of the Week Menu Item Grouping Starts-->
             <div class="row">
               <div class="row__small-2">
                 <div class="menu-UI--row-header">
@@ -345,49 +409,943 @@
                 </div>
               </div>
             </div>
-              <!--Days of the Week Menu Item Grouping Starts-->
-              <div class="row">
-                <div class="row__small-2">
-                  <div class="menu-UI--row-header">
-                    <h5>Tuesday</h5>
-                  </div>
-                </div>
-                <div class="row__small-10">
-                  <div class="menu-UI--menu-organization-of-rows">
-                    <!--Item Breakfast-->
-                    <div class="menu-UI">
-                      <div class="menu-UI--row-content">
-                        <h6 class="menu-UI--day">Breakfast</h6>
-                        <div class="menu-UI--row-square">
-                          <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!--Item Lunch-->
-                    <div class="menu-UI">
-                      <div class="menu-UI--row-content">
-                        <h6 class="menu-UI--day">Lunch</h6>
-                        <div class="menu-UI--row-square">
-                          <p>menu item</p>
-                        </div>
-                      </div>
-                    </div>                
-                    <!--Item Dinner-->
-                    <div class="menu-UI">
-                      <div class="menu-UI--row-content">
-                        <h6 class="menu-UI--day">Dinner</h6>
-                        <div class="menu-UI--row-square">
-                          <p>menu item</p>
-                        </div>
-                      </div>
-                    </div>               
-                  </div>
+            <!--Days of the Week Menu Item Grouping ends-->
+            <!--Days of the Week Menu Item Grouping Starts-->
+            <div class="row">
+              <div class="row__small-2">
+                <div class="menu-UI--row-header">
+                  <h5>Tuesday</h5>
                 </div>
               </div>
+              <div class="row__small-10">
+                <div class="menu-UI--menu-organization-of-rows">
+                  <!--Item Breakfast-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">Breakfast</h6>
+                      <div class="menu-UI--row-square">
+                        <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Item Lunch-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">Lunch</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--Item Dinner-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">Dinner</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>               
+                </div>
+              </div>
+            </div>
+            <!--Days of the Week Menu Item Grouping ends-->
+           <!--Days of the Week Menu Item Grouping Starts-->
+           <div class="row">
+            <div class="row__small-2">
+              <div class="menu-UI--row-header">
+                <h5>Wednesday</h5>
+              </div>
+            </div>
+            <div class="row__small-10">
+              <div class="menu-UI--menu-organization-of-rows">
+                <!--Item Breakfast-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Breakfast</h6>
+                    <div class="menu-UI--row-square">
+                      <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Item Lunch-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Lunch</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>                
+                <!--Item Dinner-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Dinner</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+          <!--Days of the Week Menu Item Grouping ends-->
+           <!--Days of the Week Menu Item Grouping Starts-->
+           <div class="row">
+            <div class="row__small-2">
+              <div class="menu-UI--row-header">
+                <h5>Thursday</h5>
+              </div>
+            </div>
+            <div class="row__small-10">
+              <div class="menu-UI--menu-organization-of-rows">
+                <!--Item Breakfast-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Breakfast</h6>
+                    <div class="menu-UI--row-square">
+                      <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Item Lunch-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Lunch</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>                
+                <!--Item Dinner-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Dinner</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+          <!--Days of the Week Menu Item Grouping ends-->
+           <!--Days of the Week Menu Item Grouping Starts-->
+           <div class="row">
+            <div class="row__small-2">
+              <div class="menu-UI--row-header">
+                <h5>Friday</h5>
+              </div>
+            </div>
+            <div class="row__small-10">
+              <div class="menu-UI--menu-organization-of-rows">
+                <!--Item Breakfast-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Breakfast</h6>
+                    <div class="menu-UI--row-square">
+                      <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Item Lunch-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Lunch</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>                
+                <!--Item Dinner-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Dinner</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+          <!--Days of the Week Menu Item Grouping ends-->
           </div>
           <!--MOBILE GROUPING ENDS-->
         </div>
         <!--Meal Category Ends/Calories-->
+        <!--Meal Category Starts/HiProtein-->
+        <div id="Protein" class="menu-UI--hidden">
+          <!--DESKTOP GROUPING STARTS-->
+          <div class="menu-UI--desktop">
+            <!--Lunch-breakfast-dinner groupings Starts-->
+            <div class="row">
+              <div class="row__small-2">
+                <div class="menu-UI--row-header menu-UI--row-header--first">
+                  <h5>Breakfast</h5>
+                </div>
+              </div>
+              <div class="row__small-10">
+                <div class="menu-UI--menu-organization-of-rows">
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day menu-UI--day--first">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>Hi protein meal</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day menu-UI--day--first">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day menu-UI--day--first">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day menu-UI--day--first">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day menu-UI--day--first">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Lunch-breakfast-dinner groupings ENDS-->
+            <!--Lunch-breakfast-dinner groupings Starts-->
+            <div class="row">
+              <div class="row__small-2">
+                <div class="menu-UI--row-header">
+                  <h5>Lunch</h5>
+                </div>
+              </div>
+              <div class="row__small-10">
+                <div class="menu-UI--menu-organization-of-rows">
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Lunch-breakfast-dinner groupings ENDS-->
+            <!--Lunch-breakfast-dinner groupings Starts-->
+            <div class="row">
+              <div class="row__small-2">
+                <div class="menu-UI--row-header">
+                  <h5>Dinner</h5>
+                </div>
+              </div>
+              <div class="row__small-10">
+                <div class="menu-UI--menu-organization-of-rows">
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Lunch-breakfast-dinner groupings ENDS-->
+          </div>
+          <!--DESKTOP GROUPING ENDS-->
+          <!--MOBILE GROUPING STARTS-->
+          <div class="menu-UI--mobile">
+            <!--Days of the Week Menu Item Grouping Starts-->
+            <div class="row">
+              <div class="row__small-2">
+                <div class="menu-UI--row-header">
+                  <h5>Monday</h5>
+                </div>
+              </div>
+              <div class="row__small-10">
+                <div class="menu-UI--menu-organization-of-rows">
+                  <!--Item Breakfast-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">Breakfast</h6>
+                      <div class="menu-UI--row-square">
+                        <p>Hi protein meal</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Item Lunch-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">Lunch</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--Item Dinner-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">Dinner</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+            <!--Days of the Week Menu Item Grouping ends-->
+            <!--Days of the Week Menu Item Grouping Starts-->
+            <div class="row">
+              <div class="row__small-2">
+                <div class="menu-UI--row-header">
+                  <h5>Tuesday</h5>
+                </div>
+              </div>
+              <div class="row__small-10">
+                <div class="menu-UI--menu-organization-of-rows">
+                  <!--Item Breakfast-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">Breakfast</h6>
+                      <div class="menu-UI--row-square">
+                        <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Item Lunch-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">Lunch</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--Item Dinner-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">Dinner</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>               
+                </div>
+              </div>
+            </div>
+            <!--Days of the Week Menu Item Grouping ends-->
+           <!--Days of the Week Menu Item Grouping Starts-->
+           <div class="row">
+            <div class="row__small-2">
+              <div class="menu-UI--row-header">
+                <h5>Wednesday</h5>
+              </div>
+            </div>
+            <div class="row__small-10">
+              <div class="menu-UI--menu-organization-of-rows">
+                <!--Item Breakfast-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Breakfast</h6>
+                    <div class="menu-UI--row-square">
+                      <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Item Lunch-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Lunch</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>                
+                <!--Item Dinner-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Dinner</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+          <!--Days of the Week Menu Item Grouping ends-->
+           <!--Days of the Week Menu Item Grouping Starts-->
+           <div class="row">
+            <div class="row__small-2">
+              <div class="menu-UI--row-header">
+                <h5>Thursday</h5>
+              </div>
+            </div>
+            <div class="row__small-10">
+              <div class="menu-UI--menu-organization-of-rows">
+                <!--Item Breakfast-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Breakfast</h6>
+                    <div class="menu-UI--row-square">
+                      <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Item Lunch-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Lunch</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>                
+                <!--Item Dinner-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Dinner</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+          <!--Days of the Week Menu Item Grouping ends-->
+           <!--Days of the Week Menu Item Grouping Starts-->
+           <div class="row">
+            <div class="row__small-2">
+              <div class="menu-UI--row-header">
+                <h5>Friday</h5>
+              </div>
+            </div>
+            <div class="row__small-10">
+              <div class="menu-UI--menu-organization-of-rows">
+                <!--Item Breakfast-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Breakfast</h6>
+                    <div class="menu-UI--row-square">
+                      <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Item Lunch-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Lunch</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>                
+                <!--Item Dinner-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Dinner</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+          <!--Days of the Week Menu Item Grouping ends-->
+          </div>
+          <!--MOBILE GROUPING ENDS-->
+        </div>
+        <!--Meal Category Ends/HiProtein-->
+        <!--Meal Category Starts/Keto-->
+        <div id="Keto" class="menu-UI--hidden">
+          <!--DESKTOP GROUPING STARTS-->
+          <div class="menu-UI--desktop">
+            <!--Lunch-breakfast-dinner groupings Starts-->
+            <div class="row">
+              <div class="row__small-2">
+                <div class="menu-UI--row-header menu-UI--row-header--first">
+                  <h5>Breakfast</h5>
+                </div>
+              </div>
+              <div class="row__small-10">
+                <div class="menu-UI--menu-organization-of-rows">
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day menu-UI--day--first">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>Keto meal</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day menu-UI--day--first">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day menu-UI--day--first">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day menu-UI--day--first">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day menu-UI--day--first">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Lunch-breakfast-dinner groupings ENDS-->
+            <!--Lunch-breakfast-dinner groupings Starts-->
+            <div class="row">
+              <div class="row__small-2">
+                <div class="menu-UI--row-header">
+                  <h5>Lunch</h5>
+                </div>
+              </div>
+              <div class="row__small-10">
+                <div class="menu-UI--menu-organization-of-rows">
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Lunch-breakfast-dinner groupings ENDS-->
+            <!--Lunch-breakfast-dinner groupings Starts-->
+            <div class="row">
+              <div class="row__small-2">
+                <div class="menu-UI--row-header">
+                  <h5>Dinner</h5>
+                </div>
+              </div>
+              <div class="row__small-10">
+                <div class="menu-UI--menu-organization-of-rows">
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--ITEM 1-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">MONDAY</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Lunch-breakfast-dinner groupings ENDS-->
+          </div>
+          <!--DESKTOP GROUPING ENDS-->
+          <!--MOBILE GROUPING STARTS-->
+          <div class="menu-UI--mobile">
+            <!--Days of the Week Menu Item Grouping Starts-->
+            <div class="row">
+              <div class="row__small-2">
+                <div class="menu-UI--row-header">
+                  <h5>Monday</h5>
+                </div>
+              </div>
+              <div class="row__small-10">
+                <div class="menu-UI--menu-organization-of-rows">
+                  <!--Item Breakfast-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">Breakfast</h6>
+                      <div class="menu-UI--row-square">
+                        <p>Keto meal</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Item Lunch-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">Lunch</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--Item Dinner-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">Dinner</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+            <!--Days of the Week Menu Item Grouping ends-->
+            <!--Days of the Week Menu Item Grouping Starts-->
+            <div class="row">
+              <div class="row__small-2">
+                <div class="menu-UI--row-header">
+                  <h5>Tuesday</h5>
+                </div>
+              </div>
+              <div class="row__small-10">
+                <div class="menu-UI--menu-organization-of-rows">
+                  <!--Item Breakfast-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">Breakfast</h6>
+                      <div class="menu-UI--row-square">
+                        <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Item Lunch-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">Lunch</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>                
+                  <!--Item Dinner-->
+                  <div class="menu-UI">
+                    <div class="menu-UI--row-content">
+                      <h6 class="menu-UI--day">Dinner</h6>
+                      <div class="menu-UI--row-square">
+                        <p>menu item</p>
+                      </div>
+                    </div>
+                  </div>               
+                </div>
+              </div>
+            </div>
+            <!--Days of the Week Menu Item Grouping ends-->
+           <!--Days of the Week Menu Item Grouping Starts-->
+           <div class="row">
+            <div class="row__small-2">
+              <div class="menu-UI--row-header">
+                <h5>Wednesday</h5>
+              </div>
+            </div>
+            <div class="row__small-10">
+              <div class="menu-UI--menu-organization-of-rows">
+                <!--Item Breakfast-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Breakfast</h6>
+                    <div class="menu-UI--row-square">
+                      <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Item Lunch-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Lunch</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>                
+                <!--Item Dinner-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Dinner</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+          <!--Days of the Week Menu Item Grouping ends-->
+           <!--Days of the Week Menu Item Grouping Starts-->
+           <div class="row">
+            <div class="row__small-2">
+              <div class="menu-UI--row-header">
+                <h5>Thursday</h5>
+              </div>
+            </div>
+            <div class="row__small-10">
+              <div class="menu-UI--menu-organization-of-rows">
+                <!--Item Breakfast-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Breakfast</h6>
+                    <div class="menu-UI--row-square">
+                      <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Item Lunch-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Lunch</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>                
+                <!--Item Dinner-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Dinner</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+          <!--Days of the Week Menu Item Grouping ends-->
+           <!--Days of the Week Menu Item Grouping Starts-->
+           <div class="row">
+            <div class="row__small-2">
+              <div class="menu-UI--row-header">
+                <h5>Friday</h5>
+              </div>
+            </div>
+            <div class="row__small-10">
+              <div class="menu-UI--menu-organization-of-rows">
+                <!--Item Breakfast-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Breakfast</h6>
+                    <div class="menu-UI--row-square">
+                      <p>Smoked Pork Meatballs & Mango Salad w/ Mixed Greens In Thyme Molasses Dressing</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Item Lunch-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Lunch</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>                
+                <!--Item Dinner-->
+                <div class="menu-UI">
+                  <div class="menu-UI--row-content">
+                    <h6 class="menu-UI--day">Dinner</h6>
+                    <div class="menu-UI--row-square">
+                      <p>menu item</p>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+          <!--Days of the Week Menu Item Grouping ends-->
+          </div>
+          <!--MOBILE GROUPING ENDS-->
+        </div>
+        <!--Meal Category Ends/Keto-->
       </div>
 
 
