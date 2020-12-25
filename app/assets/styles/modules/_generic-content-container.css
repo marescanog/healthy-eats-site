@@ -28,9 +28,18 @@
         text-shadow: none;
     }
 
+
     h3 {
         font-size: 2.00rem;
         color: white;
+    }
+
+
+    &-title {
+        h3{
+            font-size: 2.00rem;
+            color: $mainOrange;
+        }
     }
 
     &-other {
